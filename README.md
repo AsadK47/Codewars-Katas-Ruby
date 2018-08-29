@@ -1,1 +1,1 @@
-Please check all the files above!
+A personal respository dedicated to keeping useful code in Ruby!
