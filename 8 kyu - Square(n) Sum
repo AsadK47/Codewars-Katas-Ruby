@@ -4,4 +4,7 @@ For example:
 
 squareSum([1, 2, 2]) # should return 9
 
-# 
+# My solution
+def squareSum(numbers)
+  numbers.map{|x| x**2}.reduce(:+)
+end
