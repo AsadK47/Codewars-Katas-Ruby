@@ -8,4 +8,7 @@ If your holiday cost £500, the answer you should return would be 500.
 
 All inputs will be integers. Please return an integer. Round down.
 
-# My solution
+# Solution
+def duty_free(price, discount, holiday_cost)
+  (holiday_cost.to_f / (discount / 100 * price)).floor
+end
