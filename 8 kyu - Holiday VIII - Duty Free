@@ -10,5 +10,5 @@ All inputs will be integers. Please return an integer. Round down.
 
 # Solution
 def duty_free(price, discount, holiday_cost)
-  (holiday_cost.to_f / (discount / 100 * price)).floor
+  (holiday_cost.to_f / (discount / 100.0 * price)).floor
 end
