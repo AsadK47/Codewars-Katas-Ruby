@@ -14,3 +14,8 @@ The test cases contain numbers only by mistake.
 def correct(string)
   string.gsub(/[501]/, '5' => 'S', '1' => 'I', '0' => 'O')
 end
+
+# Better solution
+def correct(string)
+  string.tr('501','SOI')
+end
