@@ -15,3 +15,8 @@ DNAtoRNA("GCAT") returns ("GCAU")
 def DNAtoRNA(dna)
   dna.tr("GCAT", "GCAU")
 end
+
+# Better / Factored solution
+def DNAtoRNA(dna)
+  dna.gsub('T', 'U')
+end
