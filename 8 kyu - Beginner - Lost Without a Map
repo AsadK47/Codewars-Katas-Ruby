@@ -10,3 +10,6 @@ For the beginner, try to use the map method - it comes in very handy quite a lot
 def maps(x)
   x.map{ |y| y * 2 }
 end
+
+# Better / Factored 1 line solution
+def maps(x) x.map {|n| n * 2 } end
