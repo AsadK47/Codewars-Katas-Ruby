@@ -19,3 +19,17 @@ def evaporator(content, evap_per_day, threshold)
   end
  days
 end
+
+# Better solution
+def evaporator(content, evap_per_day, threshold)
+    day, percent = 1, 100
+    day += 1 while (percent -= percent*evap_per_day/100.0) > threshold
+    return day
+end
+
+# Crazy solution
+def evaporator(content, evap_per_day, threshold)
+    day, percent = 1, 100
+    day += 1 while (percent -= percent*evap_per_day/100.0) > threshold
+    return day
+end
