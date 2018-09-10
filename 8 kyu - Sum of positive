@@ -14,7 +14,6 @@ def positive_sum(arr)
   end
 end
 
-
 # Alternative solution
 def positive_sum(arr)
   arr.select{|x| x > 0}.reduce(0, :+)
