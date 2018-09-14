@@ -11,3 +11,8 @@ replace("ABCDE") === "!BCD!"
 def replace(s)
   s.tr("aeiouAEIOU", "!")
 end
+
+# Alternate solution
+def replace(s)
+  s.gsub(/([aeiou])/i, '!') 
+end
