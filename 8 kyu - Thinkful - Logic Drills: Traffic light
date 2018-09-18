@@ -31,3 +31,6 @@ def update_light(current)
     'red'   => 'green'
   }.fetch(current)
 end
+
+# Explanation
+1. This an example of a case when statement. It just builds on when the light is X then change it to Y
