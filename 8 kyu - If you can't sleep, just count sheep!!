@@ -12,3 +12,7 @@ def count_sheep(num)
 end
 
 # Explanation
+The code returns from 1 to the designated number but iterates each time by interpolating the number to "sheep..." which is returned in 
+an array and finally joined together to make it one long string.
+
+This was difficult to describe, perhaps I don't know it well enough...
