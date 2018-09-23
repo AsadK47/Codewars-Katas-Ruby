@@ -22,6 +22,8 @@ end
 3. If the days are only greater by 2 then return by minus 50
 4. Else return the total
 
+________________________________________________________________________________________________________________________________________
+
 # Alternate solution
 def rental_car_cost(d)
   return d * 40 if d < 3
