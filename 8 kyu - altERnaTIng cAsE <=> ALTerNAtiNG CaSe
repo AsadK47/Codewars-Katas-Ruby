@@ -13,11 +13,13 @@ uppercase letter becomes lowercase. For example:
 As usual, your function/method should be pure, i.e. it should not mutate the original string.
 
 # My solution
+```ruby
 class String
   def to_alternating_case
     swapcase
   end
 end
+```
 
 # Explanation
 1. Fortunately this is a fairly simple and self explained solution. The .swapcase method swaps the case of the string!
