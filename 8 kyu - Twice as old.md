@@ -6,9 +6,11 @@ current age of his son (years)
 
 
 # Solution
+```ruby
 def twice_as_old(dad, son)
     (dad - son * 2).abs
 end
+```
 
 # Explanation
 1. What this code is doing getting the dads age and minusing it from the sons. This means that regardless of how old the dad or the son
