@@ -8,6 +8,8 @@ should return
 "aaaaa"
 
 # My solution
+```ruby
 def repeater(string, n)
   string * n
 end
+```
