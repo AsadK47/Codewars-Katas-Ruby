@@ -1,3 +1,4 @@
+# Task
 Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. 
 It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
 
@@ -12,11 +13,15 @@ For example:
 DNAtoRNA("GCAT") returns ("GCAU")
 
 # My solution
+```ruby
 def DNAtoRNA(dna)
   dna.tr("GCAT", "GCAU")
 end
+```
 
 # Better / Factored solution
+```ruby
 def DNAtoRNA(dna)
   dna.gsub('T', 'U')
 end
+```
