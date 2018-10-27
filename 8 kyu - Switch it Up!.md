@@ -1,3 +1,4 @@
+# Task
 When provided with a number between 0-9, return it in words.
 
 Input :: 1
@@ -7,6 +8,7 @@ Output :: "One".
 Try using "Switch" statements.
 
 # My solution
+```ruby
 def switch_it_up(number)
   case
   when number == 1
@@ -29,8 +31,11 @@ def switch_it_up(number)
   return "Nine"
  end
 end
+```
 
 # Better / Factored Solution
+```ruby
 def switch_it_up(number)
   %w(Zero One Two Three Four Five Six Seven Eight Nine)[number]
 end
+```
