@@ -31,7 +31,7 @@ Explanation:
 After placing signs and brackets, the Maximum value obtained from the expression is 9 * (1+1) = 18.
 
 # Solution
-```
+```ruby
 def expression_matter(a, b, c)
   [
     a * (b + c),
