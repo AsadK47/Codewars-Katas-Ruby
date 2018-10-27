@@ -1,3 +1,4 @@
+# Task
 Return the Nth Even Number
 
 nthEven(1) //=> 0, the first even number is 0
@@ -8,11 +9,15 @@ nthEven(1298734) //=> 2597466
 The input will not be 0.
 
 # My solution
+```ruby
 def nth_even(n)
   ( n * 2 ) - 2
 end
+```
 
 # Alternative solution
+```ruby
 def nth_even(n)
    (n-1) * 2
 end
+```
