@@ -1,3 +1,4 @@
+# Task
 Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence
 which is the number of times you must multiply the digits in num until you reach a single digit.
 
@@ -11,9 +12,11 @@ For example:
 
  persistence(4) # returns 0, because 4 is already a one-digit number
  
- _______________________________________________________________________________________________________________________________________
- 
+
+# Solution
+```ruby
 def persistence(n)
   return 0 if n < 10
   1 + persistence(n.digits.reduce(&:*))
 end
+```
