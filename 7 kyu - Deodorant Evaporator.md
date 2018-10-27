@@ -1,3 +1,4 @@
+# Task
 This program tests the life of an evaporator containing a gas.
 
 We know the content of the evaporator (content in ml), the percentage of foam or gas lost every day (evap_per_day) and 
@@ -10,6 +11,7 @@ Some people might prefer to reason with content, some other with percentages onl
 It's up to you but you must keep it as a parameter because the tests have it as an argument.
 
 # Understood solution
+```ruby
 def evaporator(content, evap_per_day, threshold)
   days = 0
   threshold_limit = threshold.fdiv(100) * content
@@ -19,17 +21,22 @@ def evaporator(content, evap_per_day, threshold)
   end
  days
 end
+```
 
 # Better solution
+```ruby
 def evaporator(content, evap_per_day, threshold)
     day, percent = 1, 100
     day += 1 while (percent -= percent*evap_per_day/100.0) > threshold
     return day
 end
+```
 
 # Crazy solution
+```ruby
 def evaporator(content, evap_per_day, threshold)
     day, percent = 1, 100
     day += 1 while (percent -= percent*evap_per_day/100.0) > threshold
     return day
 end
+```
