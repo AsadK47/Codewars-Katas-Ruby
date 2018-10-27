@@ -1,3 +1,4 @@
+# Task
 All of the animals are having a feast! Each animal is bringing one dish. 
 There is just one rule: the dish must start and end with the same letters as the animal's name. 
 For example, the great blue heron is bringing garlic naan and the chickadee is bringing chocolate cake.
@@ -9,6 +10,7 @@ Assume that beast and dish are always lowercase strings, and that each has at le
 contain hyphens and spaces, but these will not appear at the beginning or end of the string. They will not contain numerals.
 
 # My solution
+```ruby
 def feast(beast, dish)
   if beast[0] == dish[0] and beast[-1] == dish[-1]
     return true
@@ -16,8 +18,11 @@ def feast(beast, dish)
     return false
   end
 end
+```
 
 # Better/alternative solution
+```ruby
 def feast(beast, dish)
   beast[0] == dish[0] && beast[-1] == dish[-1]
 end
+```
