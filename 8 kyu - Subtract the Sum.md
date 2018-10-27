@@ -1,3 +1,4 @@
+# Task
 Subtract the sum
 NOTE! This kata can be more difficult than regular 8-kyu katas
 
@@ -123,6 +124,8 @@ There is no preloaded code to help you. This is not about coding skills; think b
 100-pineapple
 
 # Solution
+```ruby
 def subtract_sum(number)
   "apple"
 end
+```
