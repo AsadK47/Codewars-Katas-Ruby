@@ -1,3 +1,4 @@
+# Task
 When you divide the successive powers of 10 by 13 you get the following remainders of the integer divisions:
 
 1, 10, 9, 12, 3, 4.
@@ -32,7 +33,8 @@ thirt(1234567) calculates 178, then 87, then 87 and returns 87.
 
 thirt(321) calculates 48, 48 and returns 48
 
-Solution
+# Solution
+```ruby
 def thirt(num)
   loop do
     seq = [1, 10, 9, 12, 3, 4].cycle
@@ -41,3 +43,4 @@ def thirt(num)
     num = seq_sums
   end
 end
+```
