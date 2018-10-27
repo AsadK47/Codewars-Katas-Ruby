@@ -1,3 +1,4 @@
+# Task
 Description:
 Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.
 
@@ -8,11 +9,15 @@ replace("aeiou") === "!!!!!"
 replace("ABCDE") === "!BCD!"
 
 # My solution
+```ruby
 def replace(s)
   s.tr("aeiouAEIOU", "!")
 end
+```
 
 # Alternate solution
+```ruby
 def replace(s)
   s.gsub(/([aeiou])/i, '!') 
 end
+```
