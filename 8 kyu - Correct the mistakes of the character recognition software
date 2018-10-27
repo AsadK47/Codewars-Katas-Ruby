@@ -1,3 +1,4 @@
+# Task
 Character recognition software is widely used to digitise printed texts. 
 Thus the texts can be edited, searched and stored on a computer.
 
@@ -11,11 +12,15 @@ I is misinterpreted as 1
 The test cases contain numbers only by mistake.
 
 # My solution
+```ruby
 def correct(string)
   string.gsub(/[501]/, '5' => 'S', '1' => 'I', '0' => 'O')
 end
+```
 
 # Better solution
+```ruby
 def correct(string)
   string.tr('501','SOI')
 end
+```
