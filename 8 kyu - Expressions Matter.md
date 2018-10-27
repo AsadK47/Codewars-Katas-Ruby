@@ -1,4 +1,4 @@
-Task
+# Task
 Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ().
 
 Consider an Example :
@@ -31,6 +31,7 @@ Explanation:
 After placing signs and brackets, the Maximum value obtained from the expression is 9 * (1+1) = 18.
 
 # Solution
+```
 def expression_matter(a, b, c)
   [
     a * (b + c),
@@ -40,3 +41,4 @@ def expression_matter(a, b, c)
     a + b + c
   ].max
 end
+```
