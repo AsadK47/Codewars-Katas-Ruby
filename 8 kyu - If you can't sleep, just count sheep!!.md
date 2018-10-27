@@ -1,3 +1,4 @@
+# Task
 If you can't sleep, just count sheep!!
 
 Task:
@@ -7,9 +8,11 @@ Note:
 You will always receive a positive integer.
 
 # Solution
+```ruby
 def count_sheep(num)
   (1..num).map {|i| "#{i} sheep..."}.join
 end
+```
 
 # Explanation
 The code returns from 1 to the designated number but iterates each time by interpolating the number to "sheep..." which is returned in 
