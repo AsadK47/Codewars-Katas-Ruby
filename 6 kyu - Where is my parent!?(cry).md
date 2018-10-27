@@ -1,3 +1,4 @@
+# Task
 Mothers arranged dance party for children in school.On that party there are only mothers and their children.
 All are having great fun on dancing floor when suddenly all lights went out.Its dark night and no one can see eachother.
 But you were flying nearby and you can see in the dark and have ability to teleport people anywhere you want.
@@ -9,11 +10,15 @@ Task:
 Place all people in alphabetical order where Mothers are followed by their children.I.E "aAbaBb" => "AaaBbb".
 
 # My solution
+```ruby
 def find_children(dancing_brigade)
   dancing_brigade.split('').sort.sort_by(&:upcase).join
 end
+```
 
 # Better solution
+```ruby
 def find_children(dancing_brigade)
   dancing_brigade.chars.sort_by { |char| [char.downcase, char] }.join
 end
+```
