@@ -1,3 +1,4 @@
+# Task
 You receive some random elements as a space-delimited string. 
 Check if the elements are part of an ascending sequence of integers starting with 1, with an increment of 1 (e.g. 1, 2, 3, 4).
 
@@ -19,6 +20,7 @@ Examples
 
 
 # Solution
+```ruby
 def find_missing_number(sequence)
   number_sequence = sequence.split.map(&:to_i).sort
   
@@ -28,3 +30,4 @@ def find_missing_number(sequence)
   
   0
 end
+```
