@@ -1,3 +1,4 @@
+# Task
 After a hard quarter in the office you decide to get some rest on a vacation. 
 So you will book a flight for you and your girlfriend and try to leave all the mess behind you.
 
@@ -10,11 +11,13 @@ Alternatively, if you rent the car for 3 or more days, you get $20 off your tota
 Write a code that gives out the total amount for different days(d).
 
 # Solution
+```ruby
 def rental_car_cost(d)
   total = d * 40
   return total -= 50 if d > 6
   d > 2 ? (return total -= 20) : total
 end
+```
 
 # Explanation
 1. Total is calculated as days * 40
@@ -22,11 +25,11 @@ end
 3. If the days are only greater by 2 then return by minus 50
 4. Else return the total
 
-________________________________________________________________________________________________________________________________________
-
 # Alternate solution
+```ruby
 def rental_car_cost(d)
   return d * 40 if d < 3
   return d * 40 - 20 if d < 7
   return d * 40 - 50
 end
+```
