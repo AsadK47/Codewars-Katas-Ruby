@@ -1,3 +1,4 @@
+# Task
 Some numbers have funny properties. For example:
 
 89 --> 8¹ + 9² = 89 * 1
@@ -22,7 +23,9 @@ dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 236068
 
 
 # Solution
+```ruby
 def dig_pow(n, p)
     total = n.to_s.split('').map.with_index{|d, i| d.to_i ** (p+i)}.reduce(:+)
     total % n == 0 ? (total / n) : -1
 end
+```
