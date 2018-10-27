@@ -1,3 +1,4 @@
+# Task
 It's bonus time in the big city! The fatcats are rubbing their paws in anticipation... but who is going to make the most money?
 
 Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.
@@ -9,6 +10,7 @@ Return the total figure the individual will receive as a string prefixed with
 "£" (= "\u00A3", JS and Java) or "$" (C#, C++, Ruby, Clojure, Elixir, PHP and Python, Haskell).
 
 # My solution
+```ruby
 def bonus_time(salary, bonus)
   if bonus == true
     "$" + (salary * 10).to_s
@@ -16,13 +18,18 @@ def bonus_time(salary, bonus)
      bonus == false
     "$" + salary.to_s
   end
+  ```
 
 # Factored solution
+```ruby
 def bonus_time(salary, bonus)
   bonus == true ? "$" + (salary*10).to_s : "$" + salary.to_s
 end
+```
 
 # Better solution
+```ruby
 def bonus_time(salary, bonus)
   "$#{bonus ? salary * 10 : salary}"
 end
+```
