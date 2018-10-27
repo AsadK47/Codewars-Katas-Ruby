@@ -1,3 +1,4 @@
+# Task
 This is a beginner friendly kata especially for UFC/MMA fans.
 
 It's a fight between the two legends: Conor McGregor vs George Saint Pierre in Madison Square Garden. 
@@ -12,6 +13,7 @@ If the winner is Conor McGregor he will most undoubtedly say:
 "I'd like to take this chance to apologize.. To absolutely NOBODY!"
 
 # Solution
+```ruby
 def quote(fighter)
   if fighter[0].downcase == "c"
   "I'd like to take this chance to apologize.. To absolutely NOBODY!"
@@ -19,3 +21,4 @@ def quote(fighter)
   "I am not impressed by your performance."
  end
 end
+```
