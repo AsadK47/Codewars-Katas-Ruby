@@ -1,3 +1,4 @@
+# Task
 The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy 
 such that the saving over the normal high street price would effectively cover the cost of your holiday.
 
@@ -9,6 +10,8 @@ If your holiday cost £500, the answer you should return would be 500.
 All inputs will be integers. Please return an integer. Round down.
 
 # My solution
+```ruby
 def duty_free(price, discount, holiday_cost)
   (holiday_cost.to_f / (price * (discount / 100.0))).floor
 end
+```
