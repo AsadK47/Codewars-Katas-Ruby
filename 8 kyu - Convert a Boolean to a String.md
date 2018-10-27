@@ -1,3 +1,4 @@
+# Task
 In this programming exercise, you're going to learn about functions, boolean (true/false) values, strings, and the if-statement.
 
 A function is a block of code that takes an input and produces an output. 
@@ -14,11 +15,15 @@ For this kata, don't worry about edge cases like where unexpected input is passe
 You'll get to worry about these enough in later exercises.
 
 # Solution
+```ruby
 def boolean_to_string(b)
   b ? "true" : "false"
 end
+```
 
 # Other solution
+```ruby
 def boolean_to_string(b)
   b.to_s
 end
+```
