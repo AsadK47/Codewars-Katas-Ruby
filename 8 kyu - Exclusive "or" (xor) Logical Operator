@@ -1,3 +1,4 @@
+# Task
 Exclusive "or" (xor) Logical Operator
 Overview
 In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||, and, or, etc.) 
@@ -14,6 +15,7 @@ where a and b are the two expressions to be evaluated. Your xor function should 
 if exactly one of the two expressions evaluate to true, false otherwise.
 
 # My solution
+```ruby
 def xor(a,b)
   if a == b
     return false
@@ -24,13 +26,18 @@ def xor(a,b)
     false
  end
 end
+```
 
 # Much better factored solution
+```ruby
 def xor(a,b)
   a ^ b
 end
+```
 
 # Alternative
+```ruby
 def xor(a,b)
   return a != b
 end
+```
