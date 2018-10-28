@@ -15,3 +15,15 @@ def how_many_dalmatians(number)
   return respond
 end
 ```
+
+# Alternate solution
+```ruby
+def how_many_dalmatians(n)
+  case
+  when n <= 10 then "Hardly any"
+  when n <= 50 then "More than a handful!"
+  when n == 101 then "101 DALMATIONS!!!"
+  else "Woah that's a lot of dogs!"
+  end
+end
+```
